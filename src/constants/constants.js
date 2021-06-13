@@ -13,10 +13,10 @@ export const projects = [
     title: "Intra-day Trading",
     description:
       "Using sockets.io and kite api I have built a application which tells whether to buy sell or hold a stock it uses ORB (Opening Range Breakout) strategy which is an intra-day trading strategy",
-    image: "/images/2.png",
+    image: "/images/2.jpg",
     tags: ["React", "JavaScript", "Node", "Express", "Sockets.io", "Kite Api"],
     source: "https://github.com/iota-008/ORB-Strategy",
-    visit: "https://github.com/iota-008/ORB-Strategy",
+    visit: "",
     id: 1,
   },
   {
@@ -48,13 +48,13 @@ export const projects = [
   },
 
   {
-    title: "Show Your Face",
+    title: "Video Chat Application",
     description:
       "This is a real time chatting application built using Web RTC and sockets.io and React",
     image: "/images/5.jpg",
     tags: ["React", "Javascript", "Sockets.io", "Web RTC"],
     source: "https://github.com/iota-008/ShowYourFace",
-    visit: "https://github.com/iota-008/ShowYourFace",
+    visit: "",
     id: 4,
   },
   {
@@ -71,19 +71,18 @@ export const projects = [
     title: "Estimate the probability of heart disease for patients",
     description:
       "This a project where I tried to estimate the probability of heart disease for patients using their medical condition. I have used KNN model of machine learning for creating the model which gave an accuracy score of around 96%",
-    image: "/images/7.png",
+    image: "/images/7.jpg",
     tags: ["Machine Learning", "Python", "KNN", "Jupyter Notebook"],
     source:
       "https://github.com/iota-008/Estimate-the-probility-of-heart-disease-for-patients-using-KNN-model-of-Machine-learning",
-    visit:
-      "https://github.com/iota-008/Estimate-the-probility-of-heart-disease-for-patients-using-KNN-model-of-Machine-learning",
+    visit: "",
     id: 6,
   },
   {
     title: "Gender classification from tweets",
     description:
       "In this project I have created an ensemble model (naive bayes, SVM, logistic regression) to predict gender from tweets with an accuracy score of 81%",
-    image: "/images/8.png",
+    image: "/images/8.jpg",
     tags: [
       "Machine Learning",
       "Python",
@@ -94,7 +93,7 @@ export const projects = [
       "Jupyter Notebook",
     ],
     source: "https://github.com/iota-008/verzeo-internship-MajorProject",
-    visit: "https://github.com/iota-008/verzeo-internship-MajorProject",
+    visit: "",
     id: 7,
   },
 ];

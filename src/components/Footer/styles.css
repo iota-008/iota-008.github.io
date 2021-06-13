@@ -1,4 +1,4 @@
-#myBtn {
+#scrollToTopButton {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -10,15 +10,14 @@
   background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 25%, 50% 0);
-          clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 25%, 50% 0);
-  color: white;
+  -webkit-clip-path: circle();
+          clip-path: circle();
   cursor: pointer;
   padding: 15px;
   border-radius: 5px;
 }
 
-#myBtn:hover {
+#scrollToTopButton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#f3cdff), to(#420092));
   background: linear-gradient(180deg, #f3cdff 0%, #420092 100%);
 }

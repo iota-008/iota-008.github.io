@@ -19,8 +19,8 @@ const Hero = (props) => (
           My name is Ankit Raibole.
           <br /> I am final year undergrad pursuing BTech in computer science
           and engineering from Indian Institute of Information Technology,
-          Nagpur. I love learning new stuffs and building projects using latest
-          technologies.
+          Nagpur. I love learning new technologies and creating projects using
+          them.
         </SectionText>
         {/* <Button
           onClick={(e) => {

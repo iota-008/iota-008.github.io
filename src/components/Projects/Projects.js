@@ -45,12 +45,14 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <div className="button" id="button">
-                <div id="circle"></div>
-                <a href={visit} target="_blank">
-                  Visit
-                </a>
-              </div>
+              {visit !== "" ? (
+                <div className="button" id="button">
+                  <div id="circle"></div>
+                  <a href={visit} target="_blank">
+                    Visit
+                  </a>
+                </div>
+              ) : null}
               <div className="button" id="button">
                 <div id="circle"></div>
                 <a href={source} target="_blank">

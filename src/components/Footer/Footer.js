@@ -1,5 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiOutlineArrowUp,
+} from "react-icons/ai";
 import { SiCodechef } from "react-icons/si";
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
@@ -44,10 +49,13 @@ const Footer = () => {
     <FooterWrapper>
       <button
         onClick={topFunction}
-        id="myBtn"
+        id="scrollToTopButton"
         title="Go to top"
         ref={scrollToTopButtonRef}
-      />
+      >
+        <AiOutlineArrowUp size="3rem" />
+      </button>
+
       <LinkList>
         <LinkColumn>
           <LinkTitle>Resume</LinkTitle>

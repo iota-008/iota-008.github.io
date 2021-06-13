@@ -1,4 +1,4 @@
-#myBtn {
+#scrollToTopButton {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -8,13 +8,12 @@
   outline: none;
   background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   transition: all 0.5s ease-in-out;
-  clip-path: polygon(100% 25%, 100% 100%, 0 100%, 0 25%, 50% 0);
-  color: white;
+  clip-path: circle();
   cursor: pointer;
   padding: 15px;
   border-radius: 5px;
 }
 
-#myBtn:hover {
+#scrollToTopButton:hover {
   background: linear-gradient(180deg, #f3cdff 0%, #420092 100%);
 }
