@@ -6,10 +6,14 @@ import Technologies from "../components/Technologies/Technologies";
 import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
+import Head from "next/head";
 
-const Home = () => {
+const Home = ({ photo }) => {
   return (
-    <Layout>
+    <Layout photo>
+      <Head>
+        <meta property="og:image" content={photo?.url} />
+      </Head>
       <Section grid>
         <Hero />
         <BgAnimation />
@@ -23,3 +27,17 @@ const Home = () => {
 };
 
 export default Home;
+export const getServerSideProps = async () => {
+  let photo = null;
+  await fetch("https://jsonplaceholder.typicode.com/photos/1")
+    .then((response) => response.json())
+    .then((json) => {
+      photo = json;
+    });
+
+  return {
+    props: {
+      photo,
+    },
+  };
+};

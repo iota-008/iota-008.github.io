@@ -41,7 +41,9 @@ export default class MyDocument extends Document {
           <meta
             name="image"
             property="og:image"
-            content="https://drive.google.com/file/d/1QGEMaEnI88YQyXtl56e67oNtgZ9KIjk1/view?usp=sharing"
+            content={
+              "https://drive.google.com/file/d/1QGEMaEnI88YQyXtl56e67oNtgZ9KIjk1/view?usp=sharing"
+            }
           />
           <meta
             name="viewport"
