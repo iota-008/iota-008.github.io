@@ -1,5 +1,4 @@
 import React from "react";
-// import "./styles.css";
 import {
   BlogCard,
   CardInfo,
@@ -28,7 +27,7 @@ const Projects = () => (
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
           <BlogCard key={id}>
-            <Img src={image} />
+            <Img src={image} alt="Project Thumbnail" />
             <TitleContent>
               <HeaderThree titles>{title}</HeaderThree>
               <Hr />
@@ -39,7 +38,7 @@ const Projects = () => (
               <TagList>
                 {tags.map((tag, i) => (
                   <li key={i}>
-                    <Tag>{tag}</Tag>
+                    <Tag href="javascript:void(0)">{tag}</Tag>
                   </li>
                 ))}
               </TagList>
