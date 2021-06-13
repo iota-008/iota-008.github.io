@@ -43,14 +43,14 @@ const Header = () => (
       </Div2>
       <Div3>
         <SocialIcons
-          name="linkedIn"
+          ariaLabel="linkedIn"
           href="https://www.linkedin.com/in/ankit-raibole/"
           target="_blank"
         >
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
         <SocialIcons
-          name="github"
+          ariaLabel="github"
           href="https://github.com/iota-008"
           target="_blank"
         >
@@ -58,7 +58,7 @@ const Header = () => (
         </SocialIcons>
 
         <SocialIcons
-          name="CodeChef"
+          ariaLabel="CodeChef"
           href="https://www.codechef.com/users/i_o_t_a"
           target="_blank"
         >
