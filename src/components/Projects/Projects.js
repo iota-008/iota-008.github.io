@@ -38,7 +38,7 @@ const Projects = () => (
               <TagList>
                 {tags.map((tag, i) => (
                   <li key={i}>
-                    <Tag href="javascript:void(0)">{tag}</Tag>
+                    <Tag href="#!">{tag}</Tag>
                   </li>
                 ))}
               </TagList>
