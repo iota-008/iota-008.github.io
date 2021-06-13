@@ -3,6 +3,7 @@ import "../components/Projects/styles.css";
 import "../components/Footer/styles.css";
 import Head from "next/head";
 export default function App({ Component, pageProps, photo }) {
+  console.log(photo);
   return (
     <>
       <Head>
