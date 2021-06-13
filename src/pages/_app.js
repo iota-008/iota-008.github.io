@@ -3,7 +3,6 @@ import "../components/Projects/styles.css";
 import "../components/Footer/styles.css";
 import Head from "next/head";
 export default function App({ Component, pageProps, photo }) {
-  console.log(photo);
   return (
     <>
       <Head>
@@ -28,7 +27,9 @@ export default function App({ Component, pageProps, photo }) {
 
 export const getServerSideProps = async () => {
   let photo = null;
-  await fetch("https://jsonplaceholder.typicode.com/photos/1")
+  await fetch(
+    "https://drive.google.com/file/d/1QGEMaEnI88YQyXtl56e67oNtgZ9KIjk1/view?usp=sharing"
+  )
     .then((response) => response.json())
     .then((json) => {
       photo = json;
