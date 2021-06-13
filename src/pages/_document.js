@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
           <meta
             name="image"
             property="og:image"
-            content="https://in.docworkspace.com/d/sALXOWef1ufc1s-mA56inFA?from=drive [File] portfolio-thumbnail.png"
+            content="https://drive.google.com/file/d/1QGEMaEnI88YQyXtl56e67oNtgZ9KIjk1/view?usp=sharing"
           />
           <meta
             name="viewport"
