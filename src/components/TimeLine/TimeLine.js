@@ -138,6 +138,7 @@ const Timeline = () => {
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
           <CarouselButton
+            name="timeline navigation button"
             key={index}
             index={index}
             active={activeItem}

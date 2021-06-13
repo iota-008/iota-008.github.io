@@ -42,16 +42,23 @@ const Header = () => (
         </li>
       </Div2>
       <Div3>
-        <SocialIcons href="https://github.com/iota-008" target="_blank">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
         <SocialIcons
+          name="linkedIn"
           href="https://www.linkedin.com/in/ankit-raibole/"
           target="_blank"
         >
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
         <SocialIcons
+          name="github"
+          href="https://github.com/iota-008"
+          target="_blank"
+        >
+          <AiFillGithub size="3rem" />
+        </SocialIcons>
+
+        <SocialIcons
+          name="CodeChef"
           href="https://www.codechef.com/users/i_o_t_a"
           target="_blank"
         >
