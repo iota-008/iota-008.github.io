@@ -27,9 +27,7 @@ export default function App({ Component, pageProps, photo }) {
 
 export const getServerSideProps = async () => {
   let photo = null;
-  await fetch(
-    "https://drive.google.com/file/d/1QGEMaEnI88YQyXtl56e67oNtgZ9KIjk1/view?usp=sharing"
-  )
+  await fetch("../../public/images/Portfolio-Thumbnail.png")
     .then((response) => response.json())
     .then((json) => {
       photo = json;
