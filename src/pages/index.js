@@ -8,7 +8,7 @@ import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import Head from "next/head";
 
-const Home = ({ photo }) => {
+const Home = () => {
   return (
     <Layout photo>
       <Head>
@@ -27,17 +27,3 @@ const Home = ({ photo }) => {
 };
 
 export default Home;
-export const getServerSideProps = async () => {
-  let photo = null;
-  await fetch("https://jsonplaceholder.typicode.com/photos/1")
-    .then((response) => response.json())
-    .then((json) => {
-      photo = json;
-    });
-
-  return {
-    props: {
-      photo,
-    },
-  };
-};

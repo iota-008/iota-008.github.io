@@ -31,27 +31,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
-          <meta charset="UTF-8" />
-          <meta name="description" content="Portfolio" />
-          <meta
-            name="keywords"
-            content="Portfolio, Programmer, Student, Fullstack Developer"
-          />
-          <meta name="author" content="Ankit Raibole" />
-          <meta
-            name="image"
-            property="og:image"
-            content={
-              "https://drive.google.com/file/d/1QGEMaEnI88YQyXtl56e67oNtgZ9KIjk1/view?usp=sharing"
-            }
-          />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-
-          <title>Ankit Raibole - Portfolio</title>
-
           <link
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
