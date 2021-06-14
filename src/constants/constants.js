@@ -109,8 +109,11 @@ export const TimeLineData = [
 ];
 
 export const AccomplishmentsData = [
-  { number: 411, text: "Rank in CodeChef March Long Challenge 2021" },
-  { number: 1302, text: "Rank in CodeChef February Long Challenge 2021" },
+  { number: 411, text: "Global Rank in CodeChef March Long Challenge 2021" },
+  {
+    number: 1302,
+    text: "Global Rank in CodeChef February Long Challenge 2021",
+  },
   {
     number: 200,
     text: "Was in top 200 and won goodies in Hacktober fest 2020",
@@ -118,5 +121,9 @@ export const AccomplishmentsData = [
   {
     number: 100,
     text: "In top 100 of machine learning hackathon on HackerEarth 2020",
+  },
+  {
+    number: 300,
+    text: "Problems solved on LeetCode,GFG Practice, InterviewBit ",
   },
 ];

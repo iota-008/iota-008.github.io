@@ -60,7 +60,7 @@ const Footer = () => {
         <LinkColumn>
           <LinkTitle>Resume</LinkTitle>
           <LinkItem
-            href="https://drive.google.com/file/d/1ecwWQTwNWdog61-KQn21FYSNY-yhQqFD/view?usp=sharing"
+            href="https://drive.google.com/file/d/1lJDkLwGWesy1WnGVM7MSWhIcxYUdV9jH/view?usp=sharing"
             target="_blank"
           >
             Resume
