@@ -28,14 +28,14 @@ const Technologies = () => (
         <DiReact size="3rem" />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
-          <ListParagraph>Experience with React.js</ListParagraph>
+          <ListParagraph>Experience with ReactJs</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiNodejs size="3rem" />
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
-          <ListParagraph>Experience with Node.js</ListParagraph>
+          <ListParagraph>Experience with NodeJs</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>

@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Section,
   SectionText,
@@ -12,23 +11,14 @@ const Hero = (props) => (
   <div>
     <Section row nopadding>
       <LeftSection>
-        <SectionTitle>
-          Welcome to my personal portfolio built using next.js
-        </SectionTitle>
+        <SectionTitle>Welcome to my portfolio built using Next.js</SectionTitle>
         <SectionText>
           My name is Ankit Raibole.
           <br /> I am final year undergrad pursuing BTech in computer science
           and engineering from Indian Institute of Information Technology,
-          Nagpur. I love learning new technologies and creating projects using
-          them.
+          Nagpur. I love learning new technologies and using it to solve real
+          world problems.
         </SectionText>
-        {/* <Button
-          onClick={(e) => {
-            location.href = "mailto:raiboleankit8@gmail.com";
-          }}
-        >
-          Connect
-        </Button> */}
       </LeftSection>
     </Section>
   </div>

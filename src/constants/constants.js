@@ -120,10 +120,10 @@ export const AccomplishmentsData = [
   },
   {
     number: 100,
-    text: "In top 100 of machine learning hackathon on HackerEarth 2020",
+    text: "In top 100 of machine learning challenge on HackerEarth 2020",
   },
   {
-    number: "300+",
-    text: "Problems solved on LeetCode,GFG Practice, InterviewBit ",
+    number: "500+",
+    text: "Problems solved on LeetCode,Geeks For Geeks, InterviewBit ",
   },
 ];

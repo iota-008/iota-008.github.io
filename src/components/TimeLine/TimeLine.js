@@ -70,7 +70,7 @@ const Timeline = () => {
         I am a final year undergrad pursing BTech in Computer science and
         engineering from Indian Institute of Information Technology, Nagpur.
         <br />
-        Incoming SDE intern at siemens healthineers. <br />
+        Incoming SDE Intern at Siemens Healthineers. <br />
         I have worked as fullstack developer intern at labcolabs which is
         startup aiming to built a platform for researchers and students to
         collaborate.
@@ -78,7 +78,7 @@ const Timeline = () => {
         I have experience of working with MERN(MongoDb Express React Node) stack
         and also touched machine Learning ,Data Science and Android Development.
         <br />
-        I like to learn new technologies and build projects using them.
+        I like to learn new technologies and solve real world problems.
         <br />
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>

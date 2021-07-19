@@ -13,12 +13,12 @@
   -webkit-clip-path: circle();
           clip-path: circle();
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
 }
 
 #scrollToTopButton:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f3cdff), to(#420092));
-  background: linear-gradient(180deg, #f3cdff 0%, #420092 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f3cdff), to(#420092));
+  background: linear-gradient(180deg, #f3cdff 5%, #420092 100%);
 }
 /*# sourceMappingURL=styles.css.map */
