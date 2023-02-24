@@ -1,5 +1,27 @@
 import styled from "styled-components";
 
+
+export const ScrollToTopButton = styled.button`
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, from(#13adc7), to(#945dd6));
+  background: linear-gradient(360deg, #13adc7 0%, #945dd6 100%);
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:hover{
+    background: -webkit-gradient(linear, color-stop(5%, #f3cdff), to(#420092));
+    background: linear-gradient(360deg, #f3cdff 5%, #420092 100%);
+  }
+`;
 export const FooterWrapper = styled.section`
   width: calc(100vw - 96px);
   max-width: 1040px;
@@ -14,7 +36,7 @@ export const FooterWrapper = styled.section`
 `;
 
 export const LinkItem = styled.a`
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 16px;
@@ -78,6 +100,12 @@ export const CompanyContainer = styled.div`
   }
 `;
 
+export const Img = styled.img`
+	width: 10%;
+	object-fit: cover;
+	overflow: hidden;
+`;
+
 export const Slogan = styled.p`
   color: rgba(255, 255, 255, 0.5);
   min-width: 280px;
@@ -114,7 +142,7 @@ export const LinkList = styled.ul`
   display: grid;
   // grid-template-columns: repeat(3, minmax(85px, 220px));
   grid-template-columns: repeat(3, auto);
-  gap: 40px;
+  gap: 50px;
   padding: 40px 0 28px;
 
   @media ${(props) => props.theme.breakpoints.lg} {

@@ -110,6 +110,8 @@ export const TimeLineData = [
 	},
 	{ year: 2021, month: "Aug", text: "SDE intern at Siemens Healthineers" },
 	{ year: 2022, month: "Jun", text: "Graduated" },
+	{ year: 2022, month: "Jul", text: "Design and Development Engineer at Siemens Healthineers" },
+	{ year: 2023, month: "", text: "Started learning Web3" }
 ];
 
 export const AccomplishmentsData = [
