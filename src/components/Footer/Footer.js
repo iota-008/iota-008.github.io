@@ -17,6 +17,8 @@ import {
 	Slogan,
 	SocialContainer,
 	SocialIconsContainer,
+	ScrollToTopButton,
+	Img
 } from "./FooterStyles";
 
 const Footer = () => {
@@ -46,14 +48,14 @@ const Footer = () => {
 
 	return (
 		<FooterWrapper>
-			<button
+			<ScrollToTopButton
 				onClick={topFunction}
 				id='scrollToTopButton'
 				title='Go to top'
 				ref={scrollToTopButtonRef}
 			>
-				<AiOutlineArrowUp size='3rem' />
-			</button>
+				<AiOutlineArrowUp size='3rem' color="white"/>
+			</ScrollToTopButton>
 
 			<LinkList>
 				<LinkColumn>
@@ -73,12 +75,16 @@ const Footer = () => {
 				</LinkColumn>
 				<LinkColumn>
 					<LinkTitle>call</LinkTitle>
-					<LinkItem href='tel:+91996-042-6182'>996-042-6182</LinkItem>
+					<LinkItem href='tel:+91996-042-6182'>+91 9960426182</LinkItem>
 				</LinkColumn>
 			</LinkList>
 			<SocialIconsContainer>
 				<CompanyContainer>
-					<Slogan>eat -> sleep -> code -> repeat</Slogan>
+					<Slogan>
+						<div style={{width:"100%", height:"100%", position:"relative"}}>
+							<Img src="/images/motive.gif" alt='Company Logo' />
+						</div>
+					</Slogan>
 				</CompanyContainer>
 				<SocialContainer>
 					<SocialIcons

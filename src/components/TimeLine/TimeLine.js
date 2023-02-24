@@ -67,27 +67,29 @@ const Timeline = () => {
 		<Section id='about'>
 			<SectionTitle>About Me</SectionTitle>
 			<SectionText>
-				I am a final year undergrad pursing BTech in Computer science and
-				engineering from Indian Institute of Information Technology, Nagpur.
+				As a Full-Stack Developer, I bring a unique combination of technical expertise and passion for software development to my work at Siemens Healthineers.
+				I hold a Bachelor of Technology in Computer Science and Engineering from the Indian Institute of Information Technology Nagpur, which I completed in 2022.
+				With a solid educational foundation and hands-on experience in the field, I am committed to delivering innovative solutions and driving positive impact in the tech industry.
 				<br />
 				<br />
-				Previously I have worked as an SDE intern for 6 months at Siemens
-				Healthineers, where I worked in technologies like AWS Lex, AWS Lambda,
-				and AWS S3. <br />
-				<br />
-				Before that I worked as a Fullstack developer Intern at a startup
-				Labcolabs for 2 months, where I worked with technologies like React.js,
-				Node.js, passport.js, OAuth and MongoDB.
+				With a strong background in software development, I bring a wealth of experience to any project.
+				I honed my skills as an SDE intern at Siemens Healthineers, where I spent 6 months working on AWS services like AWS Lex to develop an AI chatbot for the company website.
+				Currently, I continue to work in the same team, leveraging my expertise to drive innovative solutions. Prior to this role, I served as a Full-Stack Developer Intern at a startup, Labcolabs, where I worked with technologies such as React.js, Node.js, passport.js, OAuth, and MongoDB.
+				My ability to quickly learn and apply new technologies, combined with my passion for software development, makes me a valuable asset to any team.
 				<br />
 				<br />
-				I have been working with C++, Python, Javascript, Git, React.js,
-				Node.js, and MongoDB and have very good knowledge of Data structure &
-				algorithms, OOP, DBMS, CN, and OS. Also, I have been solving DS Algo
-				problems on leetcode consistently.
+				As a skilled software developer, I have hands-on experience with a variety of programming languages and technologies, including C++, Python, JavaScript, Git, React.js, Node.js, and MongoDB.
+				I possess a deep understanding of Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Computer Networks (CN), and Operating Systems (OS).
+				In addition, I consistently challenge myself by solving complex Data Structure and Algorithm problems on Leetcode, further honing my skills and knowledge.
 				<br />
 				<br />
-				I am always interested in learning new technologies and solving
-				real-world problems using them.
+				In addition to my technical skills and experience, I have a strong passion for web3 and trading.
+				I am constantly expanding my knowledge in these areas, always seeking out new opportunities to learn and grow.
+				My love for technology, combined with my drive to stay current with industry developments, makes me a well-rounded software developer who is always looking for ways to innovate and create impact.
+				<br />
+				<br />
+				As a lifelong learner and technology enthusiast, I am driven by the desire to explore new technologies and find innovative solutions to real-world problems.
+				My passion for staying on the cutting edge of technology, combined with my commitment to using my skills to make a positive impact, makes me a valuable asset to any team seeking to drive progress and create change.
 				<br />
 				<br />
 			</SectionText>

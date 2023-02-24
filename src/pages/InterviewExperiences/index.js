@@ -11,7 +11,7 @@ import {
 	TagList,
 	TitleContent,
 	UtilityList,
-	Img,
+	Img
 } from "../../components/Projects/ProjectsStyles.js";
 import {
 	Section,

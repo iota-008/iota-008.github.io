@@ -11,12 +11,11 @@ const Hero = (props) => (
 	<div>
 		<Section row nopadding>
 			<LeftSection>
-				<SectionTitle>Welcome to my portfolio built using Next.js</SectionTitle>
+				<SectionTitle>Ankit's journey through software engineering</SectionTitle>
 				<SectionText>
-					Hi,
-					<br />I am Ankit Raibole, a final year undergraduate pursuing Bachelor
-					of Technology in Computer Science and Engineering from Indian
-					Institute of Information Technology, Nagpur.
+					A driven and passionate software developer with 6+ months of fulltime experience in creating and deploying high-quality applications.
+					Proficient in Javascript, C#, C++, .Net core, React, Angular, Node, AWS and Azure.
+					My goal is to continue growing as a software engineer and make a meaningful impact in the tech industry.
 				</SectionText>
 			</LeftSection>
 		</Section>
