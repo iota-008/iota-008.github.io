@@ -106,7 +106,7 @@ export const Img = styled.img`
 	overflow: hidden;
 `;
 
-export const Slogan = styled.p`
+export const Slogan = styled.div`
   color: rgba(255, 255, 255, 0.5);
   min-width: 280px;
   letter-spacing: 0.02em;

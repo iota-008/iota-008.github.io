@@ -88,14 +88,14 @@ const Footer = () => {
 				</CompanyContainer>
 				<SocialContainer>
 					<SocialIcons
-						ariaLabel='linkedIn'
+						aria-label='linkedIn'
 						href='https://www.linkedin.com/in/ankit-raibole/'
 						target='_blank'
 					>
 						<AiFillLinkedin size='3rem' />
 					</SocialIcons>
 					<SocialIcons
-						ariaLabel='github'
+						aria-label='github'
 						href='https://github.com/iota-008'
 						target='_blank'
 					>
@@ -103,7 +103,7 @@ const Footer = () => {
 					</SocialIcons>
 
 					<SocialIcons
-						ariaLabel='Leetcode'
+						aria-label='Leetcode'
 						href='https://leetcode.com/iota008/'
 						target='_blank'
 					>
@@ -111,7 +111,7 @@ const Footer = () => {
 					</SocialIcons>
 
 					<SocialIcons
-						ariaLabel='CodeChef'
+						aria-label='CodeChef'
 						href='https://www.codechef.com/users/i_o_t_a'
 						target='_blank'
 					>

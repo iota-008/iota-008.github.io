@@ -45,19 +45,15 @@ const Projects = () => (
             </div>
             <UtilityList>
               {visit !== "" ? (
-                <div className="button" id="button">
+                <a className="button" id="button" href={visit} target="_blank" rel="noopener noreferrer">
                   <div id="circle"></div>
-                  <a href={visit} target="_blank">
-                    Visit
-                  </a>
-                </div>
-              ) : null}
-              <div className="button" id="button">
-                <div id="circle"></div>
-                <a href={source} target="_blank">
-                  Source
+                  <span>Visit</span>
                 </a>
-              </div>
+              ) : null}
+              <a className="button" id="button" href={source} target="_blank" rel="noopener noreferrer">
+                <div id="circle"></div>
+                <span>Source</span>
+              </a>
             </UtilityList>
           </BlogCard>
         )

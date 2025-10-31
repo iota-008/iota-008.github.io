@@ -1,6 +1,28 @@
 import Theme from "../styles/theme";
 import "../components/Projects/styles.css";
 import Head from "next/head";
+import { StyleSheetManager } from "styled-components";
+
+const filterProps = new Set([
+  "grid",
+  "row",
+  "nopadding",
+  "divider",
+  "titles",
+  "final",
+  "index",
+  "active",
+  "main",
+  "colorAlt",
+  "alt",
+  "form",
+  "disabled",
+  "nav",
+  "large",
+  "isOpen",
+  "ariaLabel",
+]);
+
 export default function App({ Component, pageProps }) {
   return (
     <>
@@ -17,9 +39,11 @@ export default function App({ Component, pageProps }) {
 
         <title>Ankit Raibole - Portfolio</title>
       </Head>
-      <Theme>
-        <Component {...pageProps} />
-      </Theme>
+      <StyleSheetManager shouldForwardProp={(prop) => !filterProps.has(prop)}>
+        <Theme>
+          <Component {...pageProps} />
+        </Theme>
+      </StyleSheetManager>
     </>
   );
 }
