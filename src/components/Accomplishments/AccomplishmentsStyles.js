@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Boxes = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
   margin: 24px 0 40px;
 
@@ -15,34 +15,31 @@ export const Boxes = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    max-width: 500px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 100%;
     margin: 24px auto;
   }
 `;
 
 export const Box = styled.div`
-  background: #212d45;
+  background: rgba(33, 45, 69, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  height: 200px;
+  min-height: 180px;
   padding: 24px;
   @media ${(props) => props.theme.breakpoints.lg} {
-    height: 210px;
+    min-height: 190px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 135px;
+    min-height: 145px;
     padding: 16px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 110px;
+    min-height: 130px;
     padding: 12px;
-
-    &:nth-child(2n) {
-      grid-row: 2;
-    }
   }
 `;
 export const BoxNum = styled.h5`
@@ -78,8 +75,8 @@ export const BoxText = styled.p`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 18px;
   }
 `;
 

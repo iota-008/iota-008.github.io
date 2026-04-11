@@ -13,6 +13,7 @@ import {
   ListItem,
   ListParagraph,
   ListTitle,
+  TechIconWrap,
 } from "./TechnologiesStyles";
 
 const Technologies = () => (
@@ -20,45 +21,55 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      Technologies I Work With
+      Core tools and platforms I use to build reliable products end-to-end.
     </SectionText>
     <List>
       <ListItem>
-        <DiReact size="3rem" />
+        <TechIconWrap>
+          <DiReact size="2.6rem" />
+        </TechIconWrap>
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>React, Angular</ListParagraph>
+        <ListTitle>Frontend</ListTitle>
+        <ListParagraph>React, Angular, TypeScript, Tailwind</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiNodejs size="3rem" />
+        <TechIconWrap>
+          <DiNodejs size="2.6rem" />
+        </TechIconWrap>
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>Node, .Net core</ListParagraph>
+        <ListTitle>Backend & APIs</ListTitle>
+        <ListParagraph>Golang, Node.js, Express, gRPC, OAuth, SCIM, SSO</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiMongodb size="3rem" />
+        <TechIconWrap>
+          <DiMongodb size="2.6rem" />
+        </TechIconWrap>
         <ListContainer>
           <ListTitle>Databases</ListTitle>
-          <ListParagraph>MongoDB, AWS DynamoDB, Azure CosmosDB</ListParagraph>
+        <ListParagraph>DynamoDB, Cosmos DB, MongoDB, PostgreSQL, Snowflake</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <SiJupyter size="3rem" />
+        <TechIconWrap>
+          <SiJupyter size="2.6rem" />
+        </TechIconWrap>
         <ListContainer>
-          <ListTitle>Machine Learning</ListTitle>
+        <ListTitle>Cloud & DevOps</ListTitle>
           <ListParagraph>
-            Python, Numpy, Pandas, ML algorithms
+        AWS, Azure, Kubernetes, Terraform, ArgoCD, DataDog, Redis
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <SiCplusplus size="3rem" />
+        <TechIconWrap>
+          <SiCplusplus size="2.4rem" />
+        </TechIconWrap>
         <ListContainer>
           <ListTitle>Languages</ListTitle>
           <ListParagraph>
-            C++, Javascript, C#, solidity.
+        Golang, TypeScript, JavaScript, Python, C++, C#
           </ListParagraph>
         </ListContainer>
       </ListItem>

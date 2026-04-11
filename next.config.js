@@ -5,4 +5,10 @@ module.exports = {
   assetPrefix: isProd
     ? "https://cdn.statically.io/gh/iota-008/iota-008.github.io/gh-pages/"
     : "",
+  compiler: {
+    styledComponents: true,
+  },
+  images: {
+    unoptimized: true,
+  },
 };
