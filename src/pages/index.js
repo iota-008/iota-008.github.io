@@ -1,5 +1,4 @@
 import Accomplishments from "../components/Accomplishments/Accomplishments";
-import dynamic from "next/dynamic";
 import Hero from "../components/Hero/Hero";
 import Projects from "../components/Projects/Projects";
 import Technologies from "../components/Technologies/Technologies";
@@ -7,17 +6,11 @@ import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 
-const BgAnimation = dynamic(
-  () => import("../components/BackgroundAnimation/BackgroundAnimation"),
-  { ssr: false }
-);
-
 const Home = () => {
     return (
         <Layout>
-            <Section grid>
+            <Section>
                 <Hero />
-                <BgAnimation />
             </Section>
             <Projects />
             <Technologies />

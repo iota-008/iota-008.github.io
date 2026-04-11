@@ -1,7 +1,32 @@
 import React from "react";
+import styled from "styled-components";
+
+const AnimationWrapper = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+
+	.BgAnimation__svg {
+		width: clamp(320px, 38vw, 620px);
+		height: auto;
+		opacity: 0.85;
+	}
+
+	@media ${(props) => props.theme.breakpoints.md} {
+		justify-content: flex-start;
+		.BgAnimation__svg {
+			width: clamp(260px, 55vw, 520px);
+		}
+	}
+
+	@media ${(props) => props.theme.breakpoints.sm} {
+		display: none;
+	}
+`;
 
 const BackgroundAnimation = () => (
-	<div>
+	<AnimationWrapper>
 		<svg
 			className='BgAnimation__svg'
 			viewBox='0 0 602 602'
@@ -359,7 +384,7 @@ const BackgroundAnimation = () => (
 				</linearGradient>
 			</defs>
 		</svg>
-	</div>
+	</AnimationWrapper>
 );
 
 export default BackgroundAnimation;

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import {
 	AiFillGithub,
-	AiFillInstagram,
 	AiFillLinkedin,
 	AiOutlineArrowUp,
 } from "react-icons/ai";
@@ -18,7 +17,6 @@ import {
 	SocialContainer,
 	SocialIconsContainer,
 	ScrollToTopButton,
-	Img
 } from "./FooterStyles";
 
 const Footer = () => {
@@ -81,9 +79,7 @@ const Footer = () => {
 			<SocialIconsContainer>
 				<CompanyContainer>
 					<Slogan>
-						<div style={{width:"100%", height:"100%", position:"relative"}}>
-							<Img src="/images/motive.gif" alt='Company Logo' />
-						</div>
+						Open to international remote software engineering opportunities.
 					</Slogan>
 				</CompanyContainer>
 				<SocialContainer>

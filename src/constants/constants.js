@@ -1,148 +1,157 @@
 export const projects = [
 	{
-		title: "Memories",
+		title: "CalorieTaker",
 		description:
-			"Using React, Node.js, Express MongoDB & passport.js I have built a web application where people can share memories in form of posts ",
-		image: "/images/project-thumbnail/1.png",
-		tags: ["Mongo", "Express", "React", "Node"],
-		source: "https://github.com/iota-008/Create-Memories",
-		visit: "https://create-your-memory.netlify.app/",
+			"Built an AI-powered fitness and nutrition application with multi-provider LLM orchestration, context-aware prompt pipelines, social feed support, and reliable offline fallbacks.",
+		image: "/images/project-thumbnail/calorietaker.png",
+		tags: ["React Native", "Python", "LLM APIs", "Google Fit", "RevenueCat"],
+		playstore: "https://play.google.com/store/apps/details?id=com.calorietaker.app",
+		visit: "https://www.calorietaker.com/",
 		id: 0,
 	},
 	{
-		title: "Intra-day Trading",
+		title: "IntraTrade",
 		description:
-			"Using sockets.io and kite api I have built a application which tells whether to buy sell or hold a stock it uses ORB (Opening Range Breakout) strategy which is an intra-day trading strategy",
-		image: "/images/project-thumbnail/2.jpg",
-		tags: ["React", "JavaScript", "Node", "Express", "Sockets.io", "Kite Api"],
+			"Engineered a high-concurrency ORB trading bot with event-driven live tick processing and sub-second order execution using Kite Connect APIs.",
+		image: "/images/project-thumbnail/intratrade.jpg",
+		tags: ["React", "Node.js", "Socket.io", "Kite API"],
 		source: "https://github.com/iota-008/ORB-Strategy",
 		visit: "",
 		id: 1,
 	},
 	{
-		title: "IPL Score Prediction",
+		title: "Score Master",
 		description:
-			"This is a project where I have used machine learning algorithm to build a model which can predict the score(First Innings) of an ongoing IPL cricket match based on current situation of the game. Used Flask framework to communicate with the users to take input and provide it to the model which give the range as an output",
-		image: "/images/project-thumbnail/3.png",
-		tags: [
-			"Flask",
-			"Python",
-			"Machine Learning",
-			"Ridge regression",
-			"Jinja",
-			"Jupyter Notebook",
-		],
+			"Developed and deployed an IPL score prediction service using Ridge Regression trained on historical match data, exposed through a production-ready Flask API.",
+		image: "/images/project-thumbnail/score-master.png",
+		tags: ["Flask", "Python", "Machine Learning", "Ridge Regression", "Heroku"],
 		source: "https://github.com/iota-008/IPL-Score-Predictor",
 		visit: "https://ipl-score-master.herokuapp.com/",
 		id: 2,
 	},
+	// {
+	// 	title: "Identity & Integration Platform Work",
+	// 	description:
+	// 		"Delivered production-grade backend platform capabilities including OAuth token-rotation reliability, SCIM mTLS hardening, and queue scaling for 120K+ message processing in enterprise SaaS environments.",
+	// 	image: "/images/project-thumbnail/4.png",
+	// 	tags: ["Golang", "Redis", "SCIM", "OAuth", "Distributed Systems"],
+	// 	source: "https://www.linkedin.com/in/ankit-raibole/",
+	// 	visit: "",
+	// 	id: 3,
+	// },
+	{
+		title: "Memories",
+		description:
+			"A social posting platform built during my early full-stack journey with authentication and CRUD flows for sharing personal memories.",
+		image: "/images/project-thumbnail/memories.png",
+		tags: ["MongoDB", "Express", "React", "Node.js", "Passport.js"],
+		source: "https://github.com/iota-008/Create-Memories",
+		visit: "https://create-your-memory.netlify.app/",
+		id: 4,
+	},
 	{
 		title: "YouTube Tools",
 		description:
-			"Created a Web application using Flask where people can download youtube videos in any available quality which gets stored in their device, download video thumbnails, download video transcripts(if available)",
-		image: "/images/project-thumbnail/4.png",
+			"A utility web app to download videos, thumbnails, and transcripts where available, built as a practical Flask learning project.",
+		image: "/images/project-thumbnail/yt-tools.png",
 		tags: ["Flask", "Python"],
 		source: "https://github.com/iota-008/YoutubeTools",
 		visit: "https://yt-tools.herokuapp.com/",
-		id: 3,
+		id: 5,
 	},
 	{
 		title: "Video Chat Application",
 		description:
-			"This is a real time chatting application built using Web RTC and sockets.io and React",
-		image: "/images/project-thumbnail/5.jpg",
-		tags: ["React", "Javascript", "Sockets.io", "Web RTC"],
+			"A real-time video chat app developed to explore WebRTC signaling and live communication using sockets.",
+		image: "/images/project-thumbnail/video-chat.jpg",
+		tags: ["React", "JavaScript", "Socket.io", "WebRTC"],
 		source: "https://github.com/iota-008/ShowYourFace",
-		visit: "",
-		id: 4,
-	},
-	{
-		title: "URL shortener",
-		description:
-			"This is very useful application which helps to create short links from long urls",
-		image: "/images/project-thumbnail/6.png",
-		tags: ["Flask", "Python"],
-		source: "https://github.com/iota-008/URL-shortner",
-		visit: "https://urls-shorts.herokuapp.com/",
-		id: 5,
-	},
-	{
-		title: "Estimate the probability of heart disease for patients",
-		description:
-			"This a project where I tried to estimate the probability of heart disease for patients using their medical condition. I have used KNN model of machine learning for creating the model which gave an accuracy score of around 96%",
-		image: "/images/project-thumbnail/7.jpg",
-		tags: ["Machine Learning", "Python", "KNN", "Jupyter Notebook"],
-		source:
-			"https://github.com/iota-008/Estimate-the-probility-of-heart-disease-for-patients-using-KNN-model-of-Machine-learning",
 		visit: "",
 		id: 6,
 	},
 	{
-		title: "Gender classification from tweets",
+		title: "URL Shortener",
 		description:
-			"In this project I have created an ensemble model (naive bayes, SVM, logistic regression) to predict gender from tweets with an accuracy score of 81%",
-		image: "/images/project-thumbnail/8.jpg",
+			"A compact URL shortening service built as an early backend systems project to practice routing, storage, and redirection logic.",
+		image: "/images/project-thumbnail/url-shortner.png",
+		tags: ["Flask", "Python"],
+		source: "https://github.com/iota-008/URL-shortner",
+		visit: "https://urls-shorts.herokuapp.com/",
+		id: 7,
+	},
+	{
+		title: "Heart Disease Risk Estimation",
+		description:
+			"A machine learning project using KNN to estimate heart disease risk from medical attributes as part of my foundational ML learning phase.",
+		image: "/images/project-thumbnail/heart-disease-risk-estimation.jpg",
+		tags: ["Machine Learning", "Python", "KNN", "Jupyter Notebook"],
+		source:
+			"https://github.com/iota-008/Estimate-the-probility-of-heart-disease-for-patients-using-KNN-model-of-Machine-learning",
+		visit: "",
+		id: 8,
+	},
+	{
+		title: "Gender Classification from Tweets",
+		description:
+			"An NLP learning project with an ensemble of Naive Bayes, SVM, and Logistic Regression for tweet-based classification.",
+		image: "/images/project-thumbnail/twitter-classification.jpg",
 		tags: [
 			"Machine Learning",
 			"Python",
-			"Natural Language Processing",
+			"NLP",
 			"Naive Bayes",
-			"Support Vector Machine",
+			"SVM",
 			"Logistic Regression",
-			"Jupyter Notebook",
 		],
 		source: "https://github.com/iota-008/verzeo-internship-MajorProject",
 		visit: "",
-		id: 7,
+		id: 9,
 	},
 ];
 
 export const TimeLineData = [
-	{ year: 2018, month: "Aug", text: "Entered college" },
-	{ year: 2019, month: "", text: "Started learning Android development" },
-	{ year: 2020, month: "", text: "Started learning Machine Learning" },
-	{ year: 2020, month: "", text: "Started learning Web development" },
-	{ year: 2021, month: "", text: "Building Projects" },
+	{ year: 2018, month: "Aug", text: "Started B.Tech in Computer Science at IIIT Nagpur" },
+	{ year: 2021, month: "Feb", text: "Joined Labcolabs as a Fullstack Developer Intern" },
 	{
 		year: 2021,
-		month: "Feb",
-		text: "Fullstack developer internship at labcolabs",
+		month: "Aug",
+		text: "Started Software Development Internship at Siemens Healthineers",
 	},
-	{ year: 2021, month: "Aug", text: "SDE intern at Siemens Healthineers" },
-	{ year: 2022, month: "Jun", text: "Graduated" },
-	{ year: 2022, month: "Jul", text: "Design and Development Engineer at Siemens Healthineers" },
-	{ year: 2023, month: "", text: "Started learning Web3" }
+	{ year: 2022, month: "Jun", text: "Graduated with B.Tech CSE from IIIT Nagpur" },
+	{ year: 2022, month: "Jul", text: "Joined Siemens Healthineers as Design & Development Engineer" },
+	{ year: 2024, month: "Jan", text: "Joined JumpCloud as Software Engineer 2 (Remote)" },
+	{ year: 2025, month: "Dec", text: "Started building CalorieTaker AI health product" },
+	{ year: 2026, month: "Apr", text: "Open to international remote backend/full-stack roles" },
 ];
 
 export const AccomplishmentsData = [
 	{
-		number: "650+",
-		text: "Problems solved on LeetCode, Geeks For Geeks, InterviewBit ",
+		number: "120K+",
+		text: "Messages processed with queue partitioning and worker-scaling architecture",
 	},
 	{
-		number: 411,
-		text: "Global Rank in CodeChef March Long Challenge 2021",
+		number: "$500K",
+		text: "ARR retention impact through production fixes and reliability improvements",
 	},
 	{
-		number: 1302,
-		text: "Global Rank in CodeChef February Long Challenge 2021",
+		number: "70%",
+		text: "Faster Snowflake reporting and analytics processing",
+	},
+	{
+		number: "70%",
+		text: "Reduction in support dependency via AI chatbot automation",
+	},
+	{
+		number: "600+",
+		text: "Algorithmic problems solved across coding platforms",
 	},
 	{
 		number: "3⭐",
-		text: "At CodeChef with 1717 rating",
+		text: "CodeChef rating 1717 with global rank 411/24,541 in March Long Challenge",
 	},
 	{
-		number: 200,
-		text: "Was in top 200 and won goodies in Hacktober fest 2020 & 2021",
-	},
-	{
-		number: 100,
-		text: "In top 100 of machine learning challenge on HackerEarth 2020",
-	},
-	{
-		number: "91%",
-		text: "In Java NPTEL Course Taken by By Prof. Debasis Samanta @ IIT Kharagpur",
-		link: "https://drive.google.com/file/d/1xeZZJmsC_Y1Tb_fo8l4kbLQonhWYfvvD/view?usp=sharing",
+		number: "Spot",
+		text: "Received Spot Awards for high-impact delivery and ownership across product engineering initiatives",
 	},
 ];
 

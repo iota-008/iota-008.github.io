@@ -1,5 +1,4 @@
 import Theme from "../styles/theme";
-import "../components/Projects/styles.css";
 import Head from "next/head";
 import { StyleSheetManager } from "styled-components";
 

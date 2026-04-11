@@ -3,19 +3,29 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1.7fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 2rem;
+  grid-column-gap: 2.4rem;
+  align-items: center;
+  width: min(100%, 1720px);
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 1.4rem clamp(16px, 3vw, 56px);
+  background: rgba(15, 22, 36, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.2rem;
+    padding: 1rem 1.2rem;
   }
 `;
 export const Div1 = styled.div`
@@ -24,32 +34,56 @@ export const Div1 = styled.div`
   flex-direction: row;
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 2;
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: 1 / 2 / 2 / 3;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2.4rem;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+    grid-area: 2 / 1 / 3 / 3;
+    justify-content: flex-start;
+    gap: 1.6rem;
   }
 `;
 export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
+  grid-area: 1 / 3 / 2 / 4;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.8rem;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: 1 / 2 / 2 / 3;
   }
+`;
+
+export const HeaderMeta = styled.span`
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.55);
+  align-self: flex-end;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
+  }
+`;
+
+export const SocialRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 `;
 
 // Navigation Links
 export const NavLink = styled(Link)`
-  font-size: 2rem;
-  line-height: 32px;
+  font-size: 2.2rem;
+  line-height: 30px;
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
   &:hover {
@@ -64,8 +98,9 @@ export const NavLink = styled(Link)`
 
 // Hash Navigation Links (use browser default anchor behavior)
 export const HashNavLink = styled.a`
-  font-size: 2rem;
-  line-height: 32px;
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
   &:hover {
@@ -131,10 +166,10 @@ export const SocialIcons = styled.a`
 transition: 0.3s ease;
 color: white;
 border-radius: 50px;
-  padding: 8px;
+  padding: 6px;
 &:hover {
-    background-color: #212d45;
-    transform: scale(1.2);
+    background-color: rgba(33, 45, 69, 0.8);
+    transform: scale(1.12);
     cursor: pointer;
     
   }

@@ -4,19 +4,33 @@ import {
 	SectionText,
 	SectionTitle,
 } from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+import { CTAGroup, CTALink, LeftSection } from "./HeroStyles";
 
 const Hero = (props) => (
 	<div>
 		<Section row nopadding>
 			<LeftSection>
-				<SectionTitle>Ankit's journey through software engineering</SectionTitle>
+				<SectionTitle>Software Engineer building reliable cloud products</SectionTitle>
 				<SectionText>
-					A driven and passionate software developer with 6+ months of fulltime experience in creating and deploying high-quality applications.
-					Proficient in Javascript, C#, C++, .Net core, React, Angular, Node, AWS and Azure.
-					My goal is to continue growing as a software engineer and make a meaningful impact in the tech industry.
+					Software Engineer 2 at JumpCloud with 4+ years of experience delivering secure,
+					scalable SaaS systems across identity, integrations, and cloud platforms.
+					I specialize in backend-heavy full-stack development with Go, Node.js, React,
+					AWS, Azure, Kubernetes, and distributed systems design.
+					I am open to international remote opportunities where I can drive measurable
+					product and business impact.
 				</SectionText>
+				<CTAGroup>
+					<CTALink
+						href='https://drive.google.com/file/d/1jjWTH5gGTQ4QVtBFioAqqfsfzuvADuuN/view?usp=sharing'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						View Resume
+					</CTALink>
+					<CTALink secondary href='mailto:raiboleankit8@gmail.com'>
+						Contact Me
+					</CTALink>
+				</CTAGroup>
 			</LeftSection>
 		</Section>
 	</div>

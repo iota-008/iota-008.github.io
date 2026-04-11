@@ -23,20 +23,21 @@ export const ScrollToTopButton = styled.button`
   }
 `;
 export const FooterWrapper = styled.section`
-  width: calc(100vw - 96px);
-  max-width: 1040px;
-  padding: 2rem 48px 40px;
+  width: min(100%, 1720px);
+  max-width: 1720px;
+  padding: 2.4rem clamp(16px, 3vw, 56px) 40px;
   margin: 1rem auto;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
-    width: calc(100vw - 32px);
+    width: 100%;
   }
 `;
 
 export const LinkItem = styled.a`
-  font-size: 17px;
+  font-size: 15px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 16px;
@@ -56,8 +57,8 @@ export const LinkItem = styled.a`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 8px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 18px;
     margin-bottom: 8px;
     display: flex;
     align-items: center;
@@ -108,11 +109,11 @@ export const Img = styled.img`
 
 export const Slogan = styled.div`
   color: rgba(255, 255, 255, 0.5);
-  min-width: 280px;
+  min-width: 320px;
   letter-spacing: 0.02em;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 1rem;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 16px;
@@ -120,8 +121,8 @@ export const Slogan = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    line-height: 22px;
-    font-size: 14px;
+    line-height: 20px;
+    font-size: 13px;
     min-width: 100px;
   }
 `;
@@ -129,6 +130,7 @@ export const Slogan = styled.div`
 export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 0.4rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
     justify-content: center;
@@ -140,9 +142,8 @@ export const SocialContainer = styled.div`
 export const LinkList = styled.ul`
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: grid;
-  // grid-template-columns: repeat(3, minmax(85px, 220px));
-  grid-template-columns: repeat(3, auto);
-  gap: 50px;
+  grid-template-columns: repeat(3, minmax(140px, auto));
+  gap: 24px;
   padding: 40px 0 28px;
 
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -156,15 +157,16 @@ export const LinkList = styled.ul`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    padding: 32px 4px 16px;
-    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px 0 14px;
+    gap: 12px;
   }
 `;
 
 export const LinkColumn = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 150px;
+  max-width: 200px;
   width: 100%;
 `;
 export const LinkTitle = styled.h4`

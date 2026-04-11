@@ -3,33 +3,42 @@ import styled from "styled-components";
 export const Section = styled.section`
 	display: ${(props) => (props.grid ? "grid" : "flex")};
 	flex-direction: ${(props) => (props.row ? "row" : "column")};
-	padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
+	padding: ${(props) => (props.nopadding ? "0" : "32px clamp(20px, 4vw, 64px) 0")};
 	margin: 0 auto;
-	max-width: 1040px;
-	box-sizing: content-box;
+	width: min(100%, 1720px);
+	max-width: 1720px;
+	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: ${(props) => (props.fullHeight ? "1fr" : "1fr 1fr")};
+	${(props) => props.fullHeight && `min-height: 100vh; align-items: center; justify-content: center;`}
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		padding: 24px 48px 0;
+		padding: 24px clamp(16px, 3vw, 40px) 0;
+		display: ${(props) => (props.grid ? "flex" : "flex")};
+		grid-template-columns: 1fr;
 		flex-direction: column;
+		${(props) => props.fullHeight && `min-height: auto; align-items: flex-start; justify-content: flex-start;`}
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-
-		width: calc(100vw - 32px);
+		width: 100%;
+		display: ${(props) => (props.grid ? "flex" : "flex")};
+		grid-template-columns: 1fr;
 		flex-direction: column;
+		${(props) => props.fullHeight && `min-height: auto; align-items: flex-start; justify-content: flex-start;`}
 	}
 `;
 
 export const SectionTitle = styled.h2`
 	font-weight: 800;
-	font-size: ${(props) => (props.main ? "65px" : "56px")};
-	line-height: ${(props) => (props.main ? "72px" : "56px")};
-	width: max-content;
+	font-size: ${(props) => (props.main ? "62px" : "50px")};
+	line-height: ${(props) => (props.main ? "70px" : "58px")};
+	width: 100%;
 	max-width: 100%;
+	white-space: normal;
+	overflow-wrap: anywhere;
 	background: linear-gradient(
 		121.57deg,
 		#ffffff 18.77%,
@@ -41,17 +50,15 @@ export const SectionTitle = styled.h2`
 	padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
 
 	@media ${(props) => props.theme.breakpoints.md} {
-		font-size: ${(props) => (props.main ? "56px" : "48px")};
-		line-height: ${(props) => (props.main ? "56px" : "48px")};
+		font-size: ${(props) => (props.main ? "50px" : "42px")};
+		line-height: ${(props) => (props.main ? "58px" : "48px")};
 		margin-bottom: 12px;
 		padding: ${(props) => (props.main ? "40px 0 12px" : "0")};
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 32px;
-		line-height: 40px;
-		font-size: ${(props) => (props.main ? "28px" : "32px")};
-		line-height: ${(props) => (props.main ? "32px" : "40px")};
+		font-size: ${(props) => (props.main ? "30px" : "32px")};
+		line-height: ${(props) => (props.main ? "36px" : "40px")};
 		margin-bottom: 8px;
 		padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
 		max-width: 100%;
@@ -59,23 +66,23 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-	max-width: 100%;
-	font-size: 24px;
-	line-height: 40px;
+	max-width: 1200px;
+	font-size: 22px;
+	line-height: 36px;
 	font-weight: 300;
-	padding-bottom: 3.6rem;
-	color: rgba(255, 255, 255, 0.5);
+	padding-bottom: 3rem;
+	color: rgba(255, 255, 255, 0.72);
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		max-width: 670px;
-		font-size: 20px;
-		line-height: 32px;
+		font-size: 19px;
+		line-height: 30px;
 		padding-bottom: 24px;
 	}
 
 	@media ${(props) => props.theme.breakpoints.sm} {
 		font-size: 16px;
-		line-height: 24px;
+		line-height: 26px;
 		padding-bottom: 16px;
 	}
 `;
@@ -105,8 +112,8 @@ export const SectionDivider = styled.div`
 export const SectionSubText = styled.p`
 	max-width: 800px;
 	font-weight: 300;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 17px;
+	line-height: 30px;
 	color: rgba(255, 255, 255, 0.75);
 
 	@media ${(props) => props.theme.breakpoints.md} {
