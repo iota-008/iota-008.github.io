@@ -41,7 +41,7 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   justify-content: center;
-  gap: 2.4rem;
+  gap: 2rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 1 / 3 / 3;
     justify-content: flex-start;

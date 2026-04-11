@@ -25,6 +25,9 @@ const Header = () => (
 			</Div1>
 			<Div2>
 				<li>
+					<HashNavLink href='#experience'>Experience</HashNavLink>
+				</li>
+				<li>
 					<HashNavLink href='#projects'>Projects</HashNavLink>
 				</li>
 				<li>

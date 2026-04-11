@@ -1,9 +1,13 @@
 export const projects = [
 	{
 		title: "CalorieTaker",
+		featured: true,
 		description:
 			"Built an AI-powered fitness and nutrition application with multi-provider LLM orchestration, context-aware prompt pipelines, social feed support, and reliable offline fallbacks.",
-		image: "/images/project-thumbnail/calorietaker.png",
+		image: "/images/project-thumbnail/calorietaker/1.png",
+		images: [
+			"/images/project-thumbnail/calorietaker/1.png",
+		],
 		tags: ["React Native", "Python", "LLM APIs", "Google Fit", "RevenueCat"],
 		playstore: "https://play.google.com/store/apps/details?id=com.calorietaker.app",
 		visit: "https://www.calorietaker.com/",
@@ -11,9 +15,13 @@ export const projects = [
 	},
 	{
 		title: "IntraTrade",
+		featured: true,
 		description:
 			"Engineered a high-concurrency ORB trading bot with event-driven live tick processing and sub-second order execution using Kite Connect APIs.",
-		image: "/images/project-thumbnail/intratrade.jpg",
+		image: "/images/project-thumbnail/intratrade/1.jpg",
+		images: [
+			"/images/project-thumbnail/intratrade/1.jpg",
+		],
 		tags: ["React", "Node.js", "Socket.io", "Kite API"],
 		source: "https://github.com/iota-008/ORB-Strategy",
 		visit: "",
@@ -21,29 +29,27 @@ export const projects = [
 	},
 	{
 		title: "Score Master",
+		featured: false,
 		description:
 			"Developed and deployed an IPL score prediction service using Ridge Regression trained on historical match data, exposed through a production-ready Flask API.",
-		image: "/images/project-thumbnail/score-master.png",
+		image: "/images/project-thumbnail/score-master/1.png",
+		images: [
+			"/images/project-thumbnail/score-master/1.png",
+		],
 		tags: ["Flask", "Python", "Machine Learning", "Ridge Regression", "Heroku"],
 		source: "https://github.com/iota-008/IPL-Score-Predictor",
 		visit: "https://ipl-score-master.herokuapp.com/",
 		id: 2,
 	},
-	// {
-	// 	title: "Identity & Integration Platform Work",
-	// 	description:
-	// 		"Delivered production-grade backend platform capabilities including OAuth token-rotation reliability, SCIM mTLS hardening, and queue scaling for 120K+ message processing in enterprise SaaS environments.",
-	// 	image: "/images/project-thumbnail/4.png",
-	// 	tags: ["Golang", "Redis", "SCIM", "OAuth", "Distributed Systems"],
-	// 	source: "https://www.linkedin.com/in/ankit-raibole/",
-	// 	visit: "",
-	// 	id: 3,
-	// },
 	{
 		title: "Memories",
+		featured: false,
 		description:
 			"A social posting platform built during my early full-stack journey with authentication and CRUD flows for sharing personal memories.",
-		image: "/images/project-thumbnail/memories.png",
+		image: "/images/project-thumbnail/memories/1.png",
+		images: [
+			"/images/project-thumbnail/memories/1.png",
+		],
 		tags: ["MongoDB", "Express", "React", "Node.js", "Passport.js"],
 		source: "https://github.com/iota-008/Create-Memories",
 		visit: "https://create-your-memory.netlify.app/",
@@ -51,19 +57,28 @@ export const projects = [
 	},
 	{
 		title: "YouTube Tools",
+		featured: true,
 		description:
-			"A utility web app to download videos, thumbnails, and transcripts where available, built as a practical Flask learning project.",
-		image: "/images/project-thumbnail/yt-tools.png",
-		tags: ["Flask", "Python"],
+			"Production-grade Python Flask multi-tool workspace for content creators with transcript extraction, video stream selection, thumbnail downloads, SEO optimization, channel audits, and idea generation. Features resilient data sourcing via multiple providers (yt-dlp, pytubefix, transcript APIs), run history tracking with JSON API, Docker Compose deployment with PostgreSQL, and GitHub Actions CI/CD.",
+		image: "/images/project-thumbnail/yt-tools/1.png",
+		images: [
+			"/images/project-thumbnail/yt-tools/1.png",
+			"/images/project-thumbnail/yt-tools/2.png",
+		],
+		tags: ["Flask", "Python", "PostgreSQL", "Docker", "GitHub Actions", "yt-dlp"],
 		source: "https://github.com/iota-008/YoutubeTools",
 		visit: "https://yt-tools.herokuapp.com/",
 		id: 5,
 	},
 	{
 		title: "Video Chat Application",
+		featured: false,
 		description:
 			"A real-time video chat app developed to explore WebRTC signaling and live communication using sockets.",
-		image: "/images/project-thumbnail/video-chat.jpg",
+		image: "/images/project-thumbnail/video-chat/1.jpg",
+		images: [
+			"/images/project-thumbnail/video-chat/1.jpg",
+		],
 		tags: ["React", "JavaScript", "Socket.io", "WebRTC"],
 		source: "https://github.com/iota-008/ShowYourFace",
 		visit: "",
@@ -71,19 +86,28 @@ export const projects = [
 	},
 	{
 		title: "URL Shortener",
+		featured: true,
 		description:
-			"A compact URL shortening service built as an early backend systems project to practice routing, storage, and redirection logic.",
-		image: "/images/project-thumbnail/url-shortner.png",
-		tags: ["Flask", "Python"],
+			"Production-oriented Flask URL shortener (Shortly Studio) with Redis-backed redirect caching, async click analytics via queue workers, custom aliases and auto-generated codes, guest + authenticated user scopes, rate limiting, JSON API, and full VM deployment automation via GitHub Actions. Handles collision-safe code creation and resilient fallback to PostgreSQL for reliability.",
+		image: "/images/project-thumbnail/url-shortner/1.png",
+		images: [
+			"/images/project-thumbnail/url-shortner/1.png",
+			"/images/project-thumbnail/url-shortner/2.png",
+		],
+		tags: ["Flask", "Python", "PostgreSQL", "Redis", "Docker", "GitHub Actions"],
 		source: "https://github.com/iota-008/URL-shortner",
 		visit: "https://urls-shorts.herokuapp.com/",
 		id: 7,
 	},
 	{
 		title: "Heart Disease Risk Estimation",
+		featured: false,
 		description:
 			"A machine learning project using KNN to estimate heart disease risk from medical attributes as part of my foundational ML learning phase.",
-		image: "/images/project-thumbnail/heart-disease-risk-estimation.jpg",
+		image: "/images/project-thumbnail/heart-disease-risk-estimation/1.jpg",
+		images: [
+			"/images/project-thumbnail/heart-disease-risk-estimation/1.jpg",
+		],
 		tags: ["Machine Learning", "Python", "KNN", "Jupyter Notebook"],
 		source:
 			"https://github.com/iota-008/Estimate-the-probility-of-heart-disease-for-patients-using-KNN-model-of-Machine-learning",
@@ -92,9 +116,13 @@ export const projects = [
 	},
 	{
 		title: "Gender Classification from Tweets",
+		featured: false,
 		description:
 			"An NLP learning project with an ensemble of Naive Bayes, SVM, and Logistic Regression for tweet-based classification.",
-		image: "/images/project-thumbnail/twitter-classification.jpg",
+		image: "/images/project-thumbnail/twitter-classification/1.jpg",
+		images: [
+			"/images/project-thumbnail/twitter-classification/1.jpg",
+		],
 		tags: [
 			"Machine Learning",
 			"Python",
@@ -106,6 +134,33 @@ export const projects = [
 		source: "https://github.com/iota-008/verzeo-internship-MajorProject",
 		visit: "",
 		id: 9,
+	},
+];
+
+export const ExperienceData = [
+	{
+		company: "JumpCloud",
+		role: "Software Engineer 2",
+		period: "Jan 2024 — Present",
+		location: "Remote",
+		stack: ["Golang", "Node.js", "AWS", "Azure", "Redis", "SCIM", "OAuth"],
+		highlights: [
+			"Delivered distributed locking for OAuth token rotation, improving connector reliability and supporting ARR retention.",
+			"Scaled queue partitioning and worker patterns for 120K+ integration messages in production workloads.",
+			"Shipped security-critical improvements including mTLS hardening for SCIM endpoints and platform reliability upgrades.",
+		],
+	},
+	{
+		company: "Siemens Healthineers",
+		role: "Design & Development Engineer",
+		period: "Jul 2022 — Dec 2023",
+		location: "India",
+		stack: ["Angular", "Node.js", "Snowflake", "Azure", "SQL", "Enterprise Apps"],
+		highlights: [
+			"Built and supported full-stack product workflows and internal engineering solutions in a healthcare technology environment.",
+			"Improved reporting and analytics throughput with Snowflake-focused optimizations that reduced processing time by roughly 70%.",
+			"Progressed from internship to full-time ownership by delivering reliable features across cloud and application layers.",
+		],
 	},
 ];
 

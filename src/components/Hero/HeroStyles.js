@@ -45,7 +45,7 @@ export const CTALink = styled.a`
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: ${(props) =>
-    props.secondary
+    props.$secondary
       ? "transparent"
       : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
   transition: 0.3s ease;

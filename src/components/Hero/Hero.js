@@ -27,7 +27,7 @@ const Hero = (props) => (
 					>
 						View Resume
 					</CTALink>
-					<CTALink secondary href='mailto:raiboleankit8@gmail.com'>
+					<CTALink $secondary href='mailto:raiboleankit8@gmail.com'>
 						Contact Me
 					</CTALink>
 				</CTAGroup>
