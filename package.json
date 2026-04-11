@@ -2,11 +2,14 @@
 	"name": "portfolio_nextjs",
 	"version": "0.1.0",
 	"private": true,
+	"engines": {
+		"node": ">=18.17.0"
+	},
 	"scripts": {
 		"generate:project-images": "node scripts/generate-project-image-manifest.js",
 		"dev": "npm run generate:project-images && next dev",
 		"build": "npm run generate:project-images && next build",
-		"export": "npm run generate:project-images && next build && next export && touch out/.nojekyll",
+		"export": "npm run generate:project-images && next build && touch out/.nojekyll",
 		"start": "next start"
 	},
 	"dependencies": {
