@@ -8,8 +8,8 @@
 	"scripts": {
 		"generate:project-images": "node scripts/generate-project-image-manifest.js",
 		"dev": "npm run generate:project-images && next dev",
-		"build": "npm run generate:project-images && next build",
-		"export": "npm run generate:project-images && next build && touch out/.nojekyll",
+		"build": "npm run generate:project-images && next build && node scripts/finalize-static-output.js",
+		"export": "npm run build",
 		"start": "next start"
 	},
 	"dependencies": {

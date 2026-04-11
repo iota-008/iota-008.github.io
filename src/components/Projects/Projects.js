@@ -279,7 +279,7 @@ const Projects = () => {
           {renderProjectCards(featuredProjects, setSelectedProject, slideTick, projectUpdatedMap)}
         </GridContainer>
 
-        <ProjectGroupTitle>Other Projects</ProjectGroupTitle>
+        <ProjectGroupTitle $spaced>Other Projects</ProjectGroupTitle>
         <ProjectGroupCopy>
           Earlier projects and learning work that show experimentation across full-stack, real-time systems, and machine learning.
         </ProjectGroupCopy>

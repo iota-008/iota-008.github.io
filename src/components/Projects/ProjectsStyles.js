@@ -20,7 +20,7 @@ export const ProjectGroupTitle = styled.h3`
 	line-height: 3rem;
 	font-weight: 700;
 	color: rgba(255, 255, 255, 0.94);
-	margin: 0 0 0.6rem;
+	margin: ${(props) => (props.$spaced ? "3rem 0 0.6rem" : "0 0 0.6rem")};
 `;
 
 export const ProjectGroupCopy = styled.p`
