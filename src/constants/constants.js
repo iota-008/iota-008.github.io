@@ -24,7 +24,7 @@ export const projects = [
 		],
 		tags: ["React", "Node.js", "Socket.io", "Kite API"],
 		source: "https://github.com/iota-008/ORB-Strategy",
-		visit: "",
+		visit: "https://intra-trade.duckdns.org/",
 		id: 1,
 	},
 	{
@@ -67,7 +67,7 @@ export const projects = [
 		],
 		tags: ["Flask", "Python", "PostgreSQL", "Docker", "GitHub Actions", "yt-dlp"],
 		source: "https://github.com/iota-008/YoutubeTools",
-		visit: "https://yt-tools.herokuapp.com/",
+		visit: "https://yt-tools.duckdns.org/",
 		id: 5,
 	},
 	{
@@ -96,7 +96,7 @@ export const projects = [
 		],
 		tags: ["Flask", "Python", "PostgreSQL", "Redis", "Docker", "GitHub Actions"],
 		source: "https://github.com/iota-008/URL-shortner",
-		visit: "https://urls-shorts.herokuapp.com/",
+		visit: "https://myshortly.duckdns.org/",
 		id: 7,
 	},
 	{
