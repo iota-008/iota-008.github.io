@@ -17,12 +17,12 @@ export const projects = [
 		title: "IntraTrade",
 		featured: true,
 		description:
-			"Engineered a high-concurrency ORB trading bot with event-driven live tick processing and sub-second order execution using Kite Connect APIs.",
+			"Realtime intraday signal dashboard for NSE equities built on Zerodha Kite WebSocket streams, supporting 4 swappable strategies (ORB, VWAP Crossover, Momentum, EMA Crossover), dynamic watchlists up to 500 symbols, per-signal stoploss computation, and live strategy switching without stream restart. Deployed with Docker, Traefik TLS, and GitHub Actions CI/CD.",
 		image: "/images/project-thumbnail/intratrade/1.jpg",
 		images: [
 			"/images/project-thumbnail/intratrade/1.jpg",
 		],
-		tags: ["React", "Node.js", "Socket.io", "Kite API"],
+		tags: ["React", "Node.js", "Socket.io", "Kite Connect", "WebSocket", "Docker", "Traefik"],
 		source: "https://github.com/iota-008/ORB-Strategy",
 		visit: "https://intra-trade.duckdns.org/",
 		id: 1,
@@ -31,14 +31,14 @@ export const projects = [
 		title: "Score Master",
 		featured: false,
 		description:
-			"Developed and deployed an IPL score prediction service using Ridge Regression trained on historical match data, exposed through a production-ready Flask API.",
+			"ML-powered T20 score prediction app using Ridge Regression trained on historical IPL data (2008–2019), delivering real-time first-innings score range inference from live match context (teams, venue, overs, wickets). Productionized with Flask 3.x + Gunicorn, Docker, Traefik TLS, and GitHub Actions VM deployment.",
 		image: "/images/project-thumbnail/score-master/1.png",
 		images: [
 			"/images/project-thumbnail/score-master/1.png",
 		],
-		tags: ["Flask", "Python", "Machine Learning", "Ridge Regression", "Heroku"],
+		tags: ["Flask", "Python", "Machine Learning", "Ridge Regression", "scikit-learn", "Gunicorn", "Docker"],
 		source: "https://github.com/iota-008/IPL-Score-Predictor",
-		visit: "https://ipl-score-master.herokuapp.com/",
+		visit: "https://score-master.duckdns.org/",
 		id: 2,
 	},
 	{
