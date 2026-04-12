@@ -318,7 +318,7 @@ export const StackTitle = styled.p`
 	letter-spacing: 0.8px;
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.66);
-	margin: 0 0 0.9rem;
+	margin: 0.8rem 0 0.9rem;
 `;
 
 export const TagList = styled.ul`
