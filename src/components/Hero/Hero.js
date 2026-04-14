@@ -21,7 +21,7 @@ const Hero = (props) => (
 				</SectionText>
 				<CTAGroup>
 					<CTALink
-						href='https://drive.google.com/file/d/1jjWTH5gGTQ4QVtBFioAqqfsfzuvADuuN/view?usp=sharing'
+						href='https://drive.google.com/file/d/1yaslZaEJ1EcaDsAIHt-81aZVQ2IowBE7/view?usp=sharing'
 						target='_blank'
 						rel='noopener noreferrer'
 					>
